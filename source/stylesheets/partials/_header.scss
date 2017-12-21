@@ -1,0 +1,66 @@
+.container {
+  position: relative;
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.main-header {
+  background: #323232;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.main-logo {
+  display: inline-block;
+  width: 257px;
+  height: 67px;
+  background: image-url("main-logo.png") no-repeat;
+  background-position: center center;
+  margin: 0 auto;
+}
+
+.left-side {
+  float: left;
+  .slogan {
+    display: inline-block;
+    vertical-align: bottom;
+    margin-top: 49px;
+    h4 {
+      font-size: 18px;
+      line-height: 18px;
+      color: #ebebeb;
+      text-transform: uppercase;
+      margin: 0;
+    }
+  }
+}
+
+.right-side {
+  position: relative;
+  font-size: 14px;
+  line-height: 16px;
+  color: #757575;
+  float: right;
+  a { margin-left: 10px; }
+}
+
+.neadevis {
+  display: inline-block;
+  vertical-align: bottom;
+  width: 187px;
+  height: 14px;
+  background: image-url("neadevis.png") no-repeat;
+  background-position: center center;
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 760px) {
+  .left-side,
+  .right-side {
+    display: block;
+    float: none;
+  }
+  .main-header { padding-top: 0; }
+  .left-side { padding-bottom: 50px; }
+}
